@@ -4,38 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning For Kids: First Words - Support</title>
+    <style>
+      @font-face {
+        font-family: "Tutti Frutti";
+        src: url("TuttiFrutti.otf") format("opentype"); /* Update the font file name */
+      }
+
+      body {
+        font-family: "Tutti Frutti", sans-serif; /* Use the custom font */
+        color: #333; /* Lighter font color */
+        max-width: 1024px; /* Limit content width */
+        margin: 0 auto; /* Center content horizontally */
+        padding: 20px; /* Add padding */
+      }
+      h1,
+      h2,
+      p,
+      label,
+      input,
+      textarea {
+        font-family: "Tutti Frutti", sans-serif; /* Apply custom font to all text elements */
+        color: #333; /* Darker font color for headers and form elements */
+      }
+      form {
+        margin-top: 20px; /* Add space between FAQ and contact form */
+      }
+      label {
+        display: block; /* Make labels block elements */
+        margin-bottom: 5px; /* Add space below labels */
+      }
+      input,
+      textarea {
+        width: 100%; /* Make inputs and textareas full width */
+        padding: 10px; /* Add padding */
+        margin-bottom: 10px; /* Add space between inputs and textareas */
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 5px; /* Add border radius */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+      }
+      input[type="submit"] {
+        background-color: #007bff; /* Blue background color */
+        color: #fff; /* White font color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add border radius */
+        cursor: pointer; /* Change cursor on hover */
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker blue background color on hover */
+      }
+      .faq {
+        margin-bottom: 20px; /* Add margin between FAQ and contact us sections */
+        padding-top: 40px;
+      }
+      .contact-us {
+        padding-top: 40px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Learning For Kids: First Words Support</h1>
+    <h1 style="text-align: center">Learning For Kids</h1>
+    <h2 style="text-align: center">First Words Support</h2>
 
-    <h2>FAQ</h2>
-    <ul>
-      <li>Q: How do I download the app?</li>
-      <p>
-        A: You can download the app from the App Store or Google Play Store.
-      </p>
-      <li>Q: Is the app available in multiple languages?</li>
-      <p>A: Yes, the app supports English and Spanish languages.</p>
-      <li>Q: How can I unlock premium features?</li>
-      <p>
-        A: You can unlock premium features by purchasing a subscription within
-        the app.
-      </p>
-    </ul>
+    <div class="faq">
+      <h2>FAQ</h2>
+      <ul>
+        <li>Q: How do I download the app?</li>
+        <p>
+          A: You can download the app from the App Store or Google Play Store.
+        </p>
+        <li>Q: Is the app available in multiple languages?</li>
+        <p>A: Yes, the app supports English and Spanish languages.</p>
+        <li>Q: How can I unlock premium features?</li>
+        <p>
+          A: You can unlock premium features by purchasing a subscription within
+          the app.
+        </p>
+      </ul>
+    </div>
 
-    <h2>Contact Us</h2>
+    <h2 class="contact-us">Contact Us</h2>
     <form
       action="mailto:cjswarehouse5@gmail.com"
       method="post"
       enctype="text/plain"
     >
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="4" required></textarea
-      ><br /><br />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
       <input type="submit" value="Submit" />
     </form>
   </body>
